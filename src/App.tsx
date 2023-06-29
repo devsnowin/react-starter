@@ -1,20 +1,19 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import Layout from './components/layout';
+import BaseLayout from './components/layout/Base';
 import About from './pages/about';
 import Home from './pages/home';
 import NotFound from './pages/notfound';
 
-function App() {
+export default function App() {
   return (
     <HashRouter>
-      <Layout>
+      <BaseLayout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Layout>
+      </BaseLayout>
     </HashRouter>
   );
 }
-export default App;

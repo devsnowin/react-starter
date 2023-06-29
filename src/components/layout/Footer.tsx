@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="text-center py-6">
       <p className="space-x-8">
@@ -12,4 +12,3 @@ function Footer() {
     </footer>
   );
 }
-export default Footer;

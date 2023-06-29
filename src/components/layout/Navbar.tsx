@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom';
-import Github from './icons/Github';
+import Github from '@/components/icons/Github';
 
-function Navbar() {
+export default function Navbar() {
   return (
     <header className="p-6 px-14 flex justify-between items-center">
       <h1 className="text-xl font-bold">
         <Link to="/">React .</Link>
       </h1>
-      <nav className="flex items-center gap-4">
-        <Link to="https://zipy.live/snowin/github" target="_blank">
+      <nav className="flex items-center gap-6">
+        <Link to="/about">About</Link>
+        <Link to="https://github.com/snowin-jj/react-starter" target="_blank">
           <Github />
         </Link>
       </nav>
     </header>
   );
 }
-export default Navbar;

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function NotFound() {
+export default function NotFound() {
   return (
     <section className="center">
       <h1 className="head">Not Found :(</h1>
@@ -10,4 +10,3 @@ function NotFound() {
     </section>
   );
 }
-export default NotFound;
